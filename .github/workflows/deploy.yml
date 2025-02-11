@@ -29,13 +29,13 @@ name: Deploy
 env:
   AZURE_WEBAPP_NAME: your-app-name  # set this to the name of your Azure Web App
 
-#on:
-  #push:
-    #branches: [ "main" ]
-  #workflow_dispatch:
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
 
-#permissions:
-  #contents: read
+permissions:
+  contents: read
 
 jobs:
   build:
