@@ -15,4 +15,3 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Pull the Docker image
-      run: docker pull ghcr.io/haustnet/haust-faucet:1.0.0
